@@ -67,36 +67,27 @@
       </div>
 
       <div class="filter">
-          <span>Фильтр:</span>
-          <span>Стоимость</span>
-          <ul>
-              <li>от 0</li>
-              <li>до 5000</li>
-          </ul>
-          <span>Цвет</span>
-          <ul>
-              <li>Черный</li>
-              <li>Белый</li>
-              <li>Синий</li>
-              <li>Красный</li>
-              <li>Розовый</li>
-          </ul>
-          <span>Bluetooth</span>
-          <ul>
-              <li>Есть</li>
-              <li>Нет</li>
-          </ul>
-          <span>Показать</span>
-      </div>
-
-      <div class="pages">
-          <span>Назад</span>
-          <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-          </ul>
-          <span>Вперед</span>
+          <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
+              <p>Фильтр:</p>
+              <p>Стоимость</p>
+              <!--думаю  как стоимость разметить -->
+              <input type="checkbox" name="color" id="color-black">
+              <label for="color-black">Черный</label>
+              <input type="checkbox" name="color" id="color-white">
+              <label for="color-white">Белый</label>
+              <input type="checkbox" name="color" id="color-blue">
+              <label for="color-blue">Синий</label>
+              <input type="checkbox" name="color" id="color-red">
+              <label for="color-red">Красный</label>
+              <input type="checkbox" name="color" id="color-pink">
+              <label for="color-pink">Розовый</label>
+              <p>Bluetooth</p>
+              <input type="radio" name="bluetooth" id="bluetooth-yes">
+              <label for="bluetooth-yes">Есть</label>
+              <input type="radio" name="bluetooth" id="bluetooth-no">
+              <label for="bluetooth-no">Нет</label>
+              <button type="button" name="button-show">Показать</button>
+          </form>
       </div>
 
         <section class="items">
@@ -117,6 +108,16 @@
                 <p>Селфи-палка «Следуй на мной»<span>4900 руб.</span></p>
             </article>
         </section>
+
+        <div class="pages">
+            <button type="button" name="page-button-backward">Назад</button>
+            <ul>
+                <li><button type="button" name="page-button">1</button></li>
+                <li><button type="button" name="page-button">2</button></li>
+                <li><button type="button" name="page-button">3</button></li>
+            </ul>
+            <button type="button" name="page-button-forward">Вперед</button>
+        </div>
 
   </main>
 
